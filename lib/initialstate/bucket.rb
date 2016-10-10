@@ -14,9 +14,9 @@ module InitialState
       @access_key ||= InitialState::Config.access_key
     end
 
-    def dump(*pairs)
+    def dump(*events)
       data = {
-        body: pairs,
+        body: events.map(&:to_hash),
         headers: {
           'X-IS-AccessKey' => access_key,
           'X-IS-BucketKey' => bucket_key
