@@ -2,7 +2,7 @@ require 'initialstate/error'
 
 module InitialState
   module Default
-    BASE_URI = 'https://groker.initialstate.com/api'
+    BASE_URI = 'https://groker.initialstate.com/api'.freeze
 
     class << self
       def access_key

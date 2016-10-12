@@ -15,15 +15,24 @@ module InitialState
     end
 
     def dump(*events)
-      data = {
-        body: events.map(&:to_hash),
+      post URI, prepare(events)
+    end
+
+    private
+
+    def prepare(events)
+      {
+        # If events are passed as normal hashes, it will also get sent
+        body: events.map { |e| e.respond_to?(:to_hash) ? e.to_hash : e },
         headers: {
           'X-IS-AccessKey' => access_key,
           'X-IS-BucketKey' => bucket_key
         }
       }
+    end
 
-      res = HTTParty.post(URI, data)
+    def post(uri, data)
+      res = HTTParty.post(uri, data)
       raise InitialState::Error::RequestError, res.message if res.code/100 != 2
       res.body
     end
