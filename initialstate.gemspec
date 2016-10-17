@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.email       = 'gems@ferrerluis.com'
 
   s.files       = ["lib/initialstate.rb"]
+  s.files       += Dir.glob("lib/**/*.rb")
 
   s.homepage    = 'https://github.com/ferrerluis/initialstate.rb'
   s.license     = 'MIT'
