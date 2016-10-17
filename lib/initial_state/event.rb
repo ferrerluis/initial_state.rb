@@ -1,5 +1,3 @@
-require 'initialstate/bucket'
-
 module InitialState
   class Event
     attr_reader :key, :value, :epoch, :iso

@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Luis Ferrer-Labarca"]
   s.email       = 'gems@ferrerluis.com'
 
-  s.files       = ["lib/initialstate.rb"]
-  s.files       += Dir.glob("lib/**/*.rb")
+  s.files         = ["lib/initial_state.rb"]
+  s.files         += Dir.glob("lib/**/*.rb")
 
   s.homepage    = 'https://github.com/ferrerluis/initialstate.rb'
   s.license     = 'MIT'

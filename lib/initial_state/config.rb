@@ -1,5 +1,3 @@
-require 'initialstate/default'
-
 module InitialState
   module Config
     class << self
