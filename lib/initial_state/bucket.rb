@@ -1,7 +1,3 @@
-require 'initialstate/error'
-require 'initialstate/default'
-require 'initialstate/config'
-
 module InitialState
   class Bucket
     ENDPOINT = '/events'

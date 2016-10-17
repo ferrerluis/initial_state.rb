@@ -1,5 +1,3 @@
-require 'initialstate/error'
-
 module InitialState
   module Default
     BASE_URI = 'https://groker.initialstate.com/api'.freeze
