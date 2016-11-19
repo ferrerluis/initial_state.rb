@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
 
   s.required_ruby_version = '>= 1.9.3'
-  s.add_runtime_dependency 'httparty', '>= 0.14.0'
-  s.add_development_dependency "rspec", '>= 3.5.0'
+  s.add_runtime_dependency 'httparty', '~> 0.14.0'
+  s.add_development_dependency "rspec", '~> 3.5.0'
+  s.add_development_dependency "pry", '~> 0.10.4'
 end
