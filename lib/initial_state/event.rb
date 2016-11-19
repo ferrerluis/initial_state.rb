@@ -21,6 +21,7 @@ module InitialState
       }
       data[:epoch] = epoch unless epoch.nil?
       data[:iso] = iso unless iso.nil?
+      data
     end
   end
 end
