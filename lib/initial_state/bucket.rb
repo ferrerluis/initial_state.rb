@@ -11,7 +11,7 @@ module InitialState
     end
 
     def dump(*events)
-      post(URI, prepare(events))
+      InitialState::Network.post(URI, prepare(events))
     end
 
     private
@@ -25,12 +25,6 @@ module InitialState
           'X-IS-BucketKey' => bucket_key
         }
       }
-    end
-
-    def post(uri, data)
-      res = HTTParty.post(uri, data)
-      raise InitialState::Error::RequestError, res.message if res.code/100 != 2
-      res.body
     end
   end
 end
