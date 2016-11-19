@@ -1,10 +1,16 @@
 module InitialState
-  class Version
+  module Version
     ENDPOINT = '/versions'.freeze
     URI = InitialState::Default::BASE_URI + ENDPOINT
 
-    def all
+    class << self
+      def all
+        InitialState::Network.get(URI)
+      end
 
+      def latest
+        all.last
+      end
     end
   end
 end
