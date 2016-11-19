@@ -8,6 +8,11 @@ module InitialState
         raise InitialState::Error::RequestError, res.message if res.code/100 != 2
         res.body
       end
+      def get(uri)
+        res = HTTParty.get(uri)
+        raise InitialState::Error::RequestError, res.message if res.code/100 != 2
+        res.body
+      end
     end
   end
 end
