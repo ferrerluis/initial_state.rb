@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'initialstate'
+  s.name        = 'initial_state'
   s.version     = '0.0.1'
   s.date        = '2016-10-12'
   s.summary     = "Ruby Wrapper for InitialState API"
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.files         = ["lib/initial_state.rb"]
   s.files         += Dir.glob("lib/**/*.rb")
 
-  s.homepage    = 'https://github.com/ferrerluis/initialstate.rb'
+  s.homepage    = 'https://github.com/ferrerluis/initial_state.rb'
   s.license     = 'MIT'
 
   s.required_ruby_version = '>= 1.9.3'
