@@ -10,8 +10,8 @@ module InitialState
     end
 
     def push(bucket_key, access_key=nil)
-      bucket = Bucket.new bucket_key, access_key
-      bucket.dump self
+      bucket = Bucket.new(bucket_key, access_key)
+      bucket.dump(self)
     end
 
     def to_hash

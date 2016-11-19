@@ -1,17 +1,17 @@
 module InitialState
   class Bucket
-    ENDPOINT = '/events'
+    ENDPOINT = '/events'.freeze
     URI = InitialState::Default::BASE_URI + ENDPOINT
 
     attr_reader :bucket_key, :access_key
 
-    def initialize(bucket_key, access_key=nil)
+    def initialize(bucket_key, access_key=InitialState::Config.access_key)
       @bucket_key = bucket_key
-      @access_key ||= InitialState::Config.access_key
+      @access_key = access_key
     end
 
     def dump(*events)
-      post URI, prepare(events)
+      post(URI, prepare(events))
     end
 
     private
