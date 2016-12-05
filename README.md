@@ -3,18 +3,18 @@
 The gem `initialstate` is a wrapper library for the public API provided by [Initial State](https://initialstate.com/). As of now, it only allows for the simplest use cases provided by the API: dumping data in a bucket.
 
 ## Installation
-- Install InitialState.rb: `gem install initialstate`
-- OR add to your Gemfile: `gem 'initialstate', '~> 0.0.1'`
+- Install InitialState.rb: `gem install initial_state`
+- OR add to your Gemfile: `gem 'initial_state', '~> 0.0.2'`
 - OR clone this repo and build and install the gem for the latest development version (under your own risk)
-  - Clone the repo: `git clone https://github.com/ferrerluis/initialstate.rb.git; cd initialstate.rb`
-  - Build the gem: `gem build initialstate.gemspec`
-  - Install the gem: `gem install ./initialstate-0.0.1.gem`
+  - Clone the repo: `git clone https://github.com/ferrerluis/initial_state.rb.git; cd initial_state.rb`
+  - Build the gem: `gem build initial_state.gemspec`
+  - Install the gem: `gem install ./initial_state-0.0.2.gem`
 
 ## Usage
-- Require InitialState.rb (skip if adding to Gemfile in Rails): `require 'initialstate'`
-- Create an event: `event = Event.new 'foo', 'bar'`
-- Create a bucket: `bucket = Bucket.new 'my_bucket_key', 'my_access_key'`
-- Dump the event into the bucket: `bucket.dump event`
+- Require InitialState.rb (skip if adding to Gemfile in Rails): `require 'initial_state'`
+- Create an event: `event = Event.new('foo', 'bar')`
+- Create a bucket: `bucket = Bucket.new('my_bucket_key', 'my_access_key')`
+- Dump the event into the bucket: `bucket.dump(event)`
 - PROFIT (jk.)
 
 ## API

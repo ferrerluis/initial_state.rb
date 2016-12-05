@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'initial_state'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2016-10-12'
   s.summary     = "Ruby Wrapper for InitialState API"
   s.description = "Simple Ruby library for using InitialState API"
