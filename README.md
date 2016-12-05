@@ -1,4 +1,4 @@
-# InitialState.rb ![Build status](https://travis-ci.org/ferrerluis/initialstate.rb.svg?branch=master)
+# InitialState.rb ![Build status](https://travis-ci.org/ferrerluis/initial_state.rb.svg?branch=master)
 
 The gem `initialstate` is a wrapper library for the public API provided by [Initial State](https://initialstate.com/). As of now, it only allows for the simplest use cases provided by the API: dumping data in a bucket.
 
